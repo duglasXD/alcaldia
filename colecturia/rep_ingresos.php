@@ -54,7 +54,7 @@
 
 	// Consultar datos
 	$conexion = conectar();
-	$consulta = "select d.cod_rub, sum(d.mon) tot from co_factura f, co_factura_detalle d where f.cod_fac = d.cod_fac and fec = current_date -1 group by d.cod_rub";
+	$consulta = "select d.cod_rub, sum(d.mon) tot from co_factura f, co_factura_detalle d where f.cod_fac = d.cod_fac and fec = current_date group by d.cod_rub";
 
 	$resultado = pg_query($consulta);
 
