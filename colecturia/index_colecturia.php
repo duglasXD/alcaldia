@@ -52,6 +52,9 @@
 						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Reporte<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="rep_ingresos.php" target="centro" onclick="getElementById('centro').height='1000px'"><i class="icon-search"></i>Reporte Diario</a></li>
+							</ul>
 						</li>
 
 					</ul>
