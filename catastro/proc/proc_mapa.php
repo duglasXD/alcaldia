@@ -18,12 +18,12 @@
 					
 				}
 				if($row['tip_con']=="J"){
-					$sql2="SELECT nom_jur FROM ca_sociedad WHERE idSoc='$row[cod_con]'";
-					$rs2=pg_query($sql2);
-					$row2=pg_fetch_array($rs2);
-					$propietario=$row2['nom_jur'];
+					//$sql2="SELECT nom_jur FROM ca_sociedad WHERE idSoc='$row[cod_con]'";
+					//$rs2=pg_query($sql2);
+					//$row2=pg_fetch_array($rs2);
+					//$propietario=$row2['nom_jur'];
 				}
-				echo $x."<br>";
+				
 				$datneg[]=array(
 					'cod_neg'=>$obj->cod_neg,
 					'nom_neg'=>$obj->nom_neg,
@@ -42,7 +42,7 @@
 				);
 				$x++;
 			}
-			//echo ''.json_encode($datneg).'';
+			echo ''.json_encode($datneg).'';
 			pg_close($conn);
 		break;
 

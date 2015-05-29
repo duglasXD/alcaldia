@@ -112,9 +112,9 @@ function ver(opcion){
       caso: opcion
     },
     success:function(responseText){
-      //var dataJson = eval(responseText);
-      alert(responseText);
-      //cargaAll(dataJson,opcion);
+      var dataJson = eval(responseText);
+      //alert(responseText);
+      cargaAll(dataJson,opcion);
     }
   });
 }
